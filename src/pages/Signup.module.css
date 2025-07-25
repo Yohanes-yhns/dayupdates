@@ -1,0 +1,122 @@
+/* Most styles are the same as Login.module.css */
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 0 1rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 28rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #2d3748;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #0097b2;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #4a5568;
+  font-size: 0.875rem;
+}
+
+.link {
+  color: #0097b2;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #66d2e5;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  transition: all 0.3s;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+.button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(to right, #0097b2, #016273);
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.passwordMatch {
+  font-size: 0.75rem;
+  color: #38a169;
+  margin-top: 0.25rem;
+}
+
+.passwordMismatch {
+  font-size: 0.75rem;
+  color: #e53e3e;
+  margin-top: 0.25rem;
+}
